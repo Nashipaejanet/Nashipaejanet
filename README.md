@@ -1,16 +1,30 @@
-## Hi there 👋
 
-<!--
-**Nashipaejanet/Nashipaejanet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Basic Calculator Program
 
-Here are some ideas to get you started:
+Create a simple Python program that asks the user to input two numbers and a mathematical operation (addition, subtraction, multiplication, or division).
+Perform the operation based on the user's input and print the result.
+Example: If a user inputs 10, 5, and +, your program should display 10 + 5 = 15.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+    print(f"{num1} + {num2} = {result}")
+elif operation == "-":
+    result = num1 - num2
+    print(f"{num1} - {num2} = {result}")
+elif operation == "*":
+    result = num1 * num2
+    print(f"{num1} * {num2} = {result}")
+elif operation == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print(f"{num1} / {num2} = {result}")
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operation.")
+
+
